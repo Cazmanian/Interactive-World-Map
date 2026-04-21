@@ -1,7 +1,12 @@
-<strong> **DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
-# WESTERN GOVERNORS UNIVERSITY 
-## D280 – JAVASCRIPT PROGRAMMING
-Welcome to JavaScript Programming! 
-For specific task instructions and requirements for this assessment, please refer to the course page.
+World Map Project for D280 JavaScript Programming
+-------------------------------------------------
+Student ID: 011512255
+
+Angular Version: 
+
+Angular CLI: 17.2.3
+Node: 20.20.2
+Package Manager: npm 10.8.2
+OS: win32 x64
  
 
