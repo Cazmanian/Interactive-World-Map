@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-stats',
@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class StatsComponent {
 
+  @Input() countryName: string | null = '';
+  countryData: any;
 }
