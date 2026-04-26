@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgIf } from '@angular/common';
+
 
 @Component({
   selector: 'app-map',
@@ -10,5 +10,13 @@ import { NgIf } from '@angular/common';
 })
 export class MapComponent {
 
+  countryName: string | null = null;
 
+  onSvgMouseOver(event: MouseEvent) {
+    const target = event.target as SVGPathElement;
+    if (target && target.id) {
+      this.countryName = target.id;
+      console.log('Selected country:', target.id);
+    }
+  }
 }

@@ -9,6 +9,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class StatsComponent {
 
-  @Input() countryName: string | null = '';
-  countryData: any;
+  @Input() countryName: any;
+
 }

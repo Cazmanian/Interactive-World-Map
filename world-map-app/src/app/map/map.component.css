@@ -10,3 +10,9 @@
     align-content: center;
     margin: auto;
 }
+svg path:hover {
+    fill: blue;
+}
+h2 {
+    text-align: center;
+}
