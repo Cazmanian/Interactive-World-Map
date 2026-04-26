@@ -5,7 +5,7 @@
     margin-top: 0;
 }
 #map-div {
-    width: 70%;
+    width: 60%;
     height: 60%;
     align-content: center;
     margin: auto;
@@ -15,4 +15,5 @@ svg path:hover {
 }
 h2 {
     text-align: center;
+    font-family: Courier;
 }
