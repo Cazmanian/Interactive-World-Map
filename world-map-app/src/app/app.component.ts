@@ -26,4 +26,11 @@ export class AppComponent {
       this.selectedCountry = data;
     })
   }
+
+  onSearch(event: any) {
+    const countryCode = event.target?.value || event;
+    if (countryCode) {
+      this.getCountryDetails(countryCode);
+    }
+  }
 }

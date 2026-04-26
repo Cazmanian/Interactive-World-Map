@@ -1,4 +1,4 @@
-
+<div class="container">
 <div class="stats-col">
     <app-stats
     [countryName]="selectedCountry?.name"
@@ -6,9 +6,17 @@
     [region]="selectedCountry?.region"
     [incomeLevel]="selectedCountry?.incomeLevel"
     [longitude]="selectedCountry?.longitude"
-    [latitude]="selectedCountry?.latitude"></app-stats>
-    
+    [latitude]="selectedCountry?.latitude"></app-stats>    
+</div>
+<div class="search-col">
+    <input
+        type="text"
+        placeholder="Enter 2-letter country code"
+        (keyup.enter)="onSearch($event)"
+        #searchInput>
+    <button (click)="onSearch(searchInput.value)">Search</button>
 </div>
 <div class="map-col">
     <app-map (countrySelected)="getCountryDetails($event)"></app-map>
+</div>
 </div>
