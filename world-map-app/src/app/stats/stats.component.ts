@@ -10,5 +10,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class StatsComponent {
 
   @Input() countryName: any;
-
+  @Input() capital: any = null;
+  @Input() region: any = null;
+  @Input() incomeLevel: any = null;
+  @Input() longitude: any = null;
+  @Input() latitude: any = null;
 }

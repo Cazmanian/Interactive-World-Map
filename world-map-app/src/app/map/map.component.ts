@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -12,10 +12,14 @@ export class MapComponent {
 
   countryName: string | null = null;
 
+  @Output() countrySelected = new EventEmitter<string>();
+
+
   onSvgMouseOver(event: MouseEvent) {
     const target = event.target as SVGPathElement;
     if (target && target.id) {
       this.countryName = target.id;
+      this.countrySelected.emit(target.id);
       console.log('Selected country:', target.id);
     }
   }

@@ -1,8 +1,14 @@
 
 <div class="stats-col">
-    <app-stats></app-stats>
+    <app-stats
+    [countryName]="selectedCountry?.name"
+    [capital]="selectedCountry?.capital"
+    [region]="selectedCountry?.region"
+    [incomeLevel]="selectedCountry?.incomeLevel"
+    [longitude]="selectedCountry?.longitude"
+    [latitude]="selectedCountry?.latitude"></app-stats>
     
 </div>
 <div class="map-col">
-    <app-map></app-map>
+    <app-map (countrySelected)="getCountryDetails($event)"></app-map>
 </div>
