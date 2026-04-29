@@ -1,22 +1,24 @@
 <div class="container">
-<div class="stats-col">
-    <app-stats
-    [countryName]="selectedCountry?.name"
-    [capital]="selectedCountry?.capital"
-    [region]="selectedCountry?.region"
-    [incomeLevel]="selectedCountry?.incomeLevel"
-    [longitude]="selectedCountry?.longitude"
-    [latitude]="selectedCountry?.latitude"></app-stats>    
-</div>
-<div class="search-col">
+    <div class="search-row">
     <input
         type="text"
         placeholder="Enter 2-letter country code"
         (keyup.enter)="onSearch($event)"
         #searchInput>
     <button (click)="onSearch(searchInput.value)">Search</button>
-</div>
-<div class="map-col">
-    <app-map (countrySelected)="getCountryDetails($event)"></app-map>
-</div>
+    </div>
+    <div class="content-row">
+        <div class="map-col">
+            <app-map (countrySelected)="getCountryDetails($event)"></app-map>
+        </div>
+    <div class="stats-col">
+        <app-stats
+            [countryName]="selectedCountry?.name"
+            [capital]="selectedCountry?.capital"
+            [region]="selectedCountry?.region"
+            [incomeLevel]="selectedCountry?.incomeLevel"
+            [longitude]="selectedCountry?.longitude"
+            [latitude]="selectedCountry?.latitude">
+        </app-stats>    
+    </div>
 </div>

@@ -1,26 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family:'Courier New', Courier, monospace;
-}
-#container-stats {
-    padding-top: 0;
-    margin-top: 0;
-}
-#top {
-    background-color: red;
-    width: 100%;
-}
-#stats {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:rgba(110, 132, 165, 0.87);
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Courier;
 }
 p {
-    font-size: 20px;
-}
-h1 {
-    font-size: 50px;
-    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    line-height: 25px;
 }
