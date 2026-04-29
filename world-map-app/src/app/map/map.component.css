@@ -1,12 +1,12 @@
 * {
     background-color: rgb(156, 156, 156);
 }
-#container {
+.container-map {
     margin-top: 0;
 }
-#map-div {
-    width: 60%;
-    height: 60%;
+.map-div {
+    width: 80%;
+    height: 80%;
     align-content: center;
     margin: auto;
 }

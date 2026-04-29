@@ -1,5 +1,6 @@
 * {
     background-color: rgb(156, 156, 156);
+    margin: 0;
 }
 
 .container {
@@ -14,6 +15,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background: rgb(90, 89, 89);
 }
 
 .content-row {
